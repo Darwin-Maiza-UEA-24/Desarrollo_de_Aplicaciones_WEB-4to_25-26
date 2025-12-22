@@ -1,0 +1,65 @@
+/* Variables de Marca */
+:root {
+  --primary-color: #4CAF50; /* Verde Kéfir */
+  --accent-color: #ff5733;
+  --dark-color: #2c3e50;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section Personalizada */
+.hero-section {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+  url('https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=1200') no-repeat center center/cover;
+}
+
+/* Sobrescribir estilos de Bootstrap */
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animaciones de Card */
+.custom-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Animación de entrada para el título */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+/* Media Query Personalizada */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+    color: #19ec83; /* Cambio de tono en móviles */
+  }
+
+  .bg-light {
+    background-color: #1071d3 !important; /* Gris un poco más oscuro en móvil */
+  }
+}
