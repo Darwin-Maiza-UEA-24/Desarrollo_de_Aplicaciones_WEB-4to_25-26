@@ -1,0 +1,44 @@
+/* Estilo personalizado */
+.titulo-kefir {
+    color: #30cb11; 
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(23, 217, 17, 0.928); 
+}
+
+/* Opcional: Si quieres que todo el body tenga una fuente más limpia */
+body {
+    background-color: #f8f8fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-custom {
+    background: #30cb11; /* Color verde sólido */
+    color: white;
+}
+
+.btn-custom:hover {
+    background: #28a745; 
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(48, 203, 17, 0.4);
+}
+body {
+    background-color: #f8f8fa;
+}
+
+.btn-custom {
+    background: linear-gradient(45deg, #30cb11, #2575fc);
+    color: white;
+    border: #2575fc;
+    transition: transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 4px 15px rgba(4, 233, 50, 0.2);
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
