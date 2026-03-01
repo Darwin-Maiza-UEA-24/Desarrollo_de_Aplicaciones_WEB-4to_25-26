@@ -1,7 +1,10 @@
-from flask import fask
-app = flask (Kéfir)
-@app.router('/')
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
 def hello_mundo():
-    return 'hello, mundo'
-if __name__=='_main_':
-    app.run(debug=True)   
+    return 'hello, mundo, Kéfir'
+
+if __name__ == '__main__':
+    app.run(debug=True)
